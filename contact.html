@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Rosell">
+    <meta name="description" content="The place to get great deals for vactions">
+
+    <title>Budget Vacation</title>
+
+    <!-- links for other pages -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- links to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- link to favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- header starts here -->
+    <header>
+        
+        <img src="gallery/logo.png" alt="Site logo" width="100" height="72">
+
+        <div>
+            <h1>Budget Vactions</h1>
+
+                <p>You will find everything you need to book a perfect vacation!</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Photos of Vacations</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li class="active"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- start of the main page -->
+
+    <main>
+
+        <h1>Contact us to have us book your perfect vacation!</h1>
+        
+            <form method="GET" class="myForm" action="thankyou.html">
+
+                <fieldset>
+                    <legend>Customer Information</legend>
+                        <label>What is your first name?*<input type="text" name="fname" required></label>
+                        <label>What is your last name?*<input type="text" name="lname" required></label>
+                        <label>What is your phone number?*<input type="tel" name="phone" required placeholder="333-444-5566"></label>
+                        <label>What is your email address?*<input type="text" name="Email" required></label>
+                </fieldset>
+ 
+                <fieldset>
+                    <legend>Do you want one of the offered <a href="packages.html">packages?</a></legend>
+                        <select name="packages">
+                            <option value="none">Please select</option>
+                            <option value="hawaiipackage">I would like the Hawaii Package</option>
+                            <option value="utahpackage">I would like the Utah Package</option>
+                            <option value="parispackage">I would like the Paris Package</option>
+                        </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How would you like to get to your vacation?</legend>
+                        <label><input type="radio" name="transportation" value="car?">Drive your car?</label>
+                        <label><input type="radio" name="transportation" value="airplane?">Ride in an airplane?</label>
+                        <label><input type="radio" name="transportation" value="cruise?">Take a cruise?</label>
+                </fieldset>
+
+
+                <label>Comments
+                    <textarea name="comments" placeholder="This is an area for any special requests or any information you think we need to plan your perfect vacation" cols="25" rows="7"></textarea>
+                </label>
+
+
+
+                <input type="submit" value="Book a travel agent">
+
+            </form>
+
+
+
+
+
+
+
+
+    </main>
+
+    <!-- start of footer -->
+
+    <footer>
+
+        <p>&copy; August 07, 2021 &bull; Daniel Rosell &bull; <a href="mailto:10881338#my.uvu.edu">Email Us</a></p>
+
+    </footer>
+
+</body>
+</html>
